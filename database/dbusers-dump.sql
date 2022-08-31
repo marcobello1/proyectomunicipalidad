@@ -39,11 +39,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Marco Sparvoli','marcosparv@live.com.ar','$2a$10$uFdt.vQhYn6QEvaBNZS39Oon5uO0Embzp0mJvByHKUd/qJCXxYqGK',41782726,'roca 269',3364204329,'admin'),(2,'valentino','marcosparv@live.com.ar','$2a$10$r17kz5VvO/ftK0tGjCRCG.jCJ./VUbGz6dDwhZqsJJ2.VvjKjf5Zy',41782726,'roca 269',3364204329,'usuario');
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Dumping routines for database 'dbusers'
