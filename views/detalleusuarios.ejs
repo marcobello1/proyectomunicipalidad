@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">    
+    <title>Document</title>
+</head>
+<body>
+    <%- include("./partials/header.ejs") %>
+    <h1>ESTE ES EL DETALLE DE <%=users.nombre %>!</h1>
+    <ul>
+       
+        <li>Nombre: <%=users.nombre %></li>
+        <li>Email: <%=users.email %></li>
+        <li>DNI: <%=users.dni %></lI>
+        <li>Domicilio: <%=users.domicilio %></li>
+        <li>Teléfono: <%=users.telefono%></li>
+        <li>Tipo de usuario: <%=users.tipousuario %></li>
+     </ul>
+     <div class="editarborrar">
+         <a href="/users/editar/<%=users.id%>">
+            <button>Editar</button>
+        </a>
+    <form action="/users/borrar/<%=users.id%>" method="post">
+        <button type="submit">Borrar</button>
+    </form>
+     </div>
+       
+    <%- include("./partials/footer.ejs") %>
+    
+</body>
+</html>

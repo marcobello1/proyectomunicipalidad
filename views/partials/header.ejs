@@ -1,0 +1,32 @@
+<header>
+  <div class="top-header flex-row">
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <a href="/">
+      <picture class="logo">
+        <img src="../../public/images/san-nicolas.g" alt="Logo del sitio">
+      </picture>
+    </a>
+      </div>
+  <nav>
+    <% if (locals.isLogged) { %>
+      <ul>
+        <li><a href="/users/listarusuarios">LISTADO DE USUARIOS</a></li>
+      <li><a href="/users/perfilusuario">PERFIL USUARIO</a></li>
+      <li><a href="/users/cerrarsesion">CERRAR SESIÓN</a></li>
+      </ul>
+      
+      <% } else {%>
+        <ul>
+              <li><a href="/users/register">REGISTRATE</a></li>
+              <li><a href="/users/login">INICIÁ SESION</a></li>
+         
+              
+            </ul>
+      
+      <% } %>
+   
+  </nav>
+
+</header>
