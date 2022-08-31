@@ -12,6 +12,7 @@
   <nav>
     <% if (locals.isLogged) { %>
       <ul>
+        <li><a href="/">HOME</a></li>
         <li><a href="/users/listarusuarios">LISTADO DE USUARIOS</a></li>
       <li><a href="/users/perfilusuario">PERFIL USUARIO</a></li>
       <li><a href="/users/cerrarsesion">CERRAR SESIÓN</a></li>
@@ -19,6 +20,7 @@
       
       <% } else {%>
         <ul>
+             <li><a href="/">HOME</a></li>
               <li><a href="/users/register">REGISTRATE</a></li>
               <li><a href="/users/login">INICIÁ SESION</a></li>
          
